@@ -1,0 +1,76 @@
+[ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 5; glance = true; @symbol_classdef = [AppGlanceTestView,5,6,23]; @symbol_extends<0> = [WatchUi,5,32,39]; @symbol_extends<1> = [GlanceView,5,40,50]; ]
+class AppGlanceTestView extends WatchUi.GlanceView {
+    [ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+C__Users_sriga_OneDrive_Desktop_Visual_Studio_Code___Garmin_Monkey_C___Developer_BUGTESTING_GlanceBugTest_source_AppGlanceTestView_mc_7_26_9_4_start:
+[ "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc" 8 8 ]
+        symbol [ GlanceView %tmp.2 8 8 18 ];
+        %tmp.2 = getv ? :GlanceView;
+        symbol [ initialize %tmp.3 8 19 29 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_sriga_OneDrive_Desktop_Visual_Studio_Code___Garmin_Monkey_C___Developer_BUGTESTING_GlanceBugTest_source_AppGlanceTestView_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 11; @symbol_functiondef = [onUpdate,11,13,21]; @symbol_param<0> = [dc,11,22,24]; ]
+    function onUpdate(dc) as Void {
+C__Users_sriga_OneDrive_Desktop_Visual_Studio_Code___Garmin_Monkey_C___Developer_BUGTESTING_GlanceBugTest_source_AppGlanceTestView_mc_11_34_14_4_start:
+[ "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc" 12 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 12 8 10 ];
+        symbol [ setColor %tmp.2 12 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 12 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 12 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 12 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 12 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc" 13 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 13 8 10 ];
+        symbol [ drawText %tmp.8 13 11 19 ];
+        %tmp.8 = getv function %tmp.7 :drawText;
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 13 20 22 ];
+        symbol [ getWidth %tmp.10 13 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = 2;
+        %tmp.13 = div %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 13 37 39 ];
+        symbol [ getHeight %tmp.15 13 40 49 ];
+        %tmp.15 = getv function %tmp.14 :getHeight;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = 2;
+        %tmp.18 = div %tmp.16 %tmp.17;
+        symbol [ Graphics %tmp.19 13 55 63 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ FONT_GLANCE %tmp.20 13 64 75 ];
+        %tmp.20 = getv %tmp.19 :FONT_GLANCE;
+        %tmp.21 = "Debug";
+        symbol [ Graphics %tmp.22 13 86 94 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.23 13 95 114 ];
+        %tmp.23 = getv %tmp.22 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.7 %tmp.8(%tmp.13, %tmp.18, %tmp.20, %tmp.21, %tmp.23);
+C__Users_sriga_OneDrive_Desktop_Visual_Studio_Code___Garmin_Monkey_C___Developer_BUGTESTING_GlanceBugTest_source_AppGlanceTestView_mc_11_34_14_4_stop:
+    }
+}
+[ @file = "C:\Users\sriga\OneDrive\Desktop\Visual Studio Code - Garmin Monkey C - Developer\BUGTESTING\GlanceBugTest\source\AppGlanceTestView.mc"; @line = 1; ]
+<init> {
+}
